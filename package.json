@@ -1,0 +1,64 @@
+{
+  "name": "rollup-plugin-livereload-universal",
+  "version": "1.0.0",
+  "description": "Rollup plugin for reloading user's page on manually emitted events.",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.es.js",
+  "jsnext:main": "dist/index.es.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -cw",
+    "lint": "eslint */**/*.{js,ts,tsx} --fix",
+    "test": "jest --runInBand",
+    "prepare": "yarn run lint && yarn run build && yarn run test"
+  },
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "dev-server",
+    "live",
+    "reload",
+    "livereload"
+  ],
+  "license": "MIT",
+  "author": "Evgenii Dobrovidov <mr.nate.river@gmail.com>",
+  "homepage": "https://github.com/mrnateriver/rollup-plugin-livereload-universal",
+  "bugs": {
+    "url": "https://github.com/mrnateriver/rollup-plugin-livereload-universal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrnateriver/rollup-plugin-livereload-universal"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^12.0.0",
+    "@rollup/plugin-node-resolve": "^8.0.0",
+    "@types/node": "^14.0.5",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.0.1",
+    "cross-env": "^7.0.2",
+    "eslint": "^7.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jest": "^23.13.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jest": "^26.0.1",
+    "prettier": "^2.0.5",
+    "rollup": "^2.10.9",
+    "rollup-plugin-delete": "^1.2.0",
+    "rollup-plugin-memory-fs": "^1.0.1",
+    "rollup-plugin-node-externals": "^2.2.0",
+    "rollup-plugin-progress": "^1.1.2",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.27.1",
+    "tslib": "^2.0.0",
+    "typescript": "^3.9.3",
+    "ws": "^7.3.0"
+  },
+  "dependencies": {
+    "livereload": "^0.9.1"
+  }
+}
