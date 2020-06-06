@@ -1,4 +1,4 @@
-# Plugin that allows reloading user's page from outside Rollup
+# Universal Rollup LiveReload Plugin
 
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg" alt="Software License" />
